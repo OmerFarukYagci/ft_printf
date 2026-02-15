@@ -6,7 +6,7 @@
 /*   By: omyagci <omyagci@student.42kocaeli.com.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/15 08:38:22 by omyagci           #+#    #+#             */
-/*   Updated: 2026/02/15 08:43:55 by omyagci          ###   ########.fr       */
+/*   Updated: 2026/02/15 18:59:52 by omyagci          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 # include <stdarg.h>
 # include <unistd.h>
 
-int	ft_printf(const char *format, ...);
+int		ft_printf(const char *format, ...);
+void	ft_putchar(char c);
 
 #endif
