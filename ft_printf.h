@@ -6,7 +6,7 @@
 /*   By: omyagci <omyagci@student.42kocaeli.com.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/15 08:38:22 by omyagci           #+#    #+#             */
-/*   Updated: 2026/02/15 18:59:52 by omyagci          ###   ########.fr       */
+/*   Updated: 2026/02/17 15:56:53 by omyagci          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 # define FT_PRINTF_H
 
 # include <stdarg.h>
-# include <unistd.h>
 
 int		ft_printf(const char *format, ...);
 void	ft_putchar(char c);
