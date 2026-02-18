@@ -6,7 +6,7 @@
 /*   By: omyagci <omyagci@student.42kocaeli.com.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/17 15:53:04 by omyagci           #+#    #+#             */
-/*   Updated: 2026/02/18 19:48:16 by omyagci          ###   ########.fr       */
+/*   Updated: 2026/02/18 21:12:45 by omyagci          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,8 @@ int	ft_formats(va_list args, const char format)
 		len += ft_print_number(va_arg(args, int));
 	if (format == 'u')
 		len += ft_print_unsigned(va_arg(args, unsigned int));
+	if (format == '%')
+		len += ft_print_char('%');
 
 	return (len);
 }
