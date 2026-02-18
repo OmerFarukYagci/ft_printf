@@ -6,7 +6,7 @@
 /*   By: omyagci <omyagci@student.42kocaeli.com.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/15 08:38:22 by omyagci           #+#    #+#             */
-/*   Updated: 2026/02/18 19:23:57 by omyagci          ###   ########.fr       */
+/*   Updated: 2026/02/18 19:55:50 by omyagci          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,5 +21,6 @@ int		ft_putchar(char c);
 int		ft_print_char(int c);
 int		ft_print_string(char *str);
 int		ft_print_number(int n);
+int		ft_print_unsigned(unsigned int un);
 
 #endif
