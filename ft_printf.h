@@ -6,7 +6,7 @@
 /*   By: omyagci <omyagci@student.42kocaeli.com.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/15 08:38:22 by omyagci           #+#    #+#             */
-/*   Updated: 2026/02/17 15:56:53 by omyagci          ###   ########.fr       */
+/*   Updated: 2026/02/18 13:29:00 by omyagci          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,5 +17,6 @@
 
 int		ft_printf(const char *format, ...);
 void	ft_putchar(char c);
+int		ft_print_char(int c);
 
 #endif

@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf_char.c                                   :+:      :+:    :+:   */
+/*   ft_print_char.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: omyagci <omyagci@student.42kocaeli.com.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/18 13:24:10 by omyagci           #+#    #+#             */
-/*   Updated: 2026/02/18 13:25:39 by omyagci          ###   ########.fr       */
+/*   Updated: 2026/02/18 13:27:37 by omyagci          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_printf_char(int c)
+int	ft_print_char(int c)
 {
 	ft_putchar(c);
 	return (1);
