@@ -6,7 +6,7 @@
 /*   By: omyagci <omyagci@student.42kocaeli.com.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/15 14:58:26 by omyagci           #+#    #+#             */
-/*   Updated: 2026/02/18 16:41:50 by omyagci          ###   ########.fr       */
+/*   Updated: 2026/02/18 20:22:17 by omyagci          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,26 +15,26 @@
 int	ft_printf(const char *format, ...)
 {
 	va_list	args;
-	int		i;
 	int		len;
 	int		tmp;
 
-	i = 0;
+	if (!format)
+		return (-1);
 	len = 0;
 	va_start(args, format);
-	while (format[i])
+	while (*format)
 	{
-		if (format[i] == '%')
-			tmp = ft_formats(args, format[++i]);
+		if (*format == '%')
+			tmp = ft_formats(args, *(++format));
 		else
-			tmp = ft_putchar(format[i]);
+			tmp = ft_putchar(*format);
 		if (tmp == -1)
 		{
 			va_end(args);
 			return (-1);
 		}
 		len += tmp;
-		i++;
+		format++;
 	}
 	va_end(args);
 	return (len);
