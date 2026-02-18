@@ -6,13 +6,13 @@
 /*   By: omyagci <omyagci@student.42kocaeli.com.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/15 18:56:16 by omyagci           #+#    #+#             */
-/*   Updated: 2026/02/17 15:56:45 by omyagci          ###   ########.fr       */
+/*   Updated: 2026/02/18 16:27:02 by omyagci          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_putchar(char c)
+int	ft_putchar(char c)
 {
-	write(1, &c, 1);
+	return (write(1, &c, 1));
 }

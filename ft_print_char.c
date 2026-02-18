@@ -6,7 +6,7 @@
 /*   By: omyagci <omyagci@student.42kocaeli.com.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/18 13:24:10 by omyagci           #+#    #+#             */
-/*   Updated: 2026/02/18 13:34:31 by omyagci          ###   ########.fr       */
+/*   Updated: 2026/02/18 16:31:38 by omyagci          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 
 int	ft_print_char(int c)
 {
-	ft_putchar(c);
+	if (ft_putchar(c) == -1)
+		return (-1);
 	return (1);
 }
