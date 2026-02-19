@@ -7,6 +7,6 @@ int main()
 	printf("\n");
 	printf("abc %");
 	printf("\n");
-	//printf("%s\n", NULL);
-	//printf("\n");
+	printf("%s\n", NULL);
+	printf("\n");
 }
