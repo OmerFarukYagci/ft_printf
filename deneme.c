@@ -4,5 +4,7 @@
 int main()
 {
 	printf("abc %k");
-	ft_printf("abc");
+	printf("\n");
+	ft_printf("abc %k");
+	printf("\n");
 }
