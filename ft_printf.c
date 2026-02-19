@@ -6,7 +6,7 @@
 /*   By: omyagci <omyagci@student.42kocaeli.com.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/15 14:58:26 by omyagci           #+#    #+#             */
-/*   Updated: 2026/02/18 20:22:17 by omyagci          ###   ########.fr       */
+/*   Updated: 2026/02/19 18:30:04 by omyagci          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,8 @@ int	ft_printf(const char *format, ...)
 			return (-1);
 		}
 		len += tmp;
-		format++;
+		if (*format != '\0')
+			format++;
 	}
 	va_end(args);
 	return (len);

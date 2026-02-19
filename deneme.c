@@ -3,10 +3,12 @@
 
 int main()
 {
-	printf("abc %k");
+	int a = printf("abc %k"); // "abc %k" ve return 6
+	printf("\n%d", a);
 	printf("\n");
-	printf("abc %");
+	int b = printf("abc %"); // "abc " ve return 4
+	printf("\n%d", b);
 	printf("\n");
-	printf("%s\n", NULL);
-	printf("\n");
+	int c = printf("%s", NULL); // (null) ve return 6
+	printf("\n%d", c);
 }

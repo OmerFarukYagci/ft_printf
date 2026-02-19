@@ -6,7 +6,7 @@
 /*   By: omyagci <omyagci@student.42kocaeli.com.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/17 15:53:04 by omyagci           #+#    #+#             */
-/*   Updated: 2026/02/19 04:48:07 by omyagci          ###   ########.fr       */
+/*   Updated: 2026/02/19 17:47:22 by omyagci          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,21 +19,23 @@ int	ft_formats(va_list args, const char format)
 	len = 0;
 	if (format == 'c')
 		len += ft_print_char(va_arg(args, int));
-	if (format == 's')
+	else if (format == 's')
 		len += ft_print_string(va_arg(args, char *));
-	if (format == 'd')
+	else if (format == 'd')
 		len += ft_print_number(va_arg(args, int));
-	if (format == 'i')
+	else if (format == 'i')
 		len += ft_print_number(va_arg(args, int));
-	if (format == 'u')
+	else if (format == 'u')
 		len += ft_print_unsigned(va_arg(args, unsigned int));
-	if (format == '%')
+	else if (format == '%')
 		len += ft_print_char('%');
-	if (format == 'x')
+	else if (format == 'x')
 		len += ft_print_hexl(va_arg(args, unsigned int));
-	if (format == 'X')
+	else if (format == 'X')
 		len += ft_print_hexu(va_arg(args, unsigned int));
-	if (format == 'p')
+	else if (format == 'p')
 		len += ft_print_pointer(va_arg(args, unsigned long long));
+	else
+		len += ft_print_others(format);
 	return (len);
 }
