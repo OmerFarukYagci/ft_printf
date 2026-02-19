@@ -6,7 +6,7 @@
 /*   By: omyagci <omyagci@student.42kocaeli.com.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/15 08:38:22 by omyagci           #+#    #+#             */
-/*   Updated: 2026/02/19 04:19:25 by omyagci          ###   ########.fr       */
+/*   Updated: 2026/02/19 13:12:14 by omyagci          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,5 +24,5 @@ int		ft_print_number(int n);
 int		ft_print_unsigned(unsigned int un);
 int		ft_print_hexl(unsigned int n);
 int		ft_print_hexu(unsigned int n);
-
+int		ft_print_pointer(unsigned long long pointer);
 #endif
