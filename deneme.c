@@ -5,8 +5,8 @@ int main()
 {
 	printf("abc %k");
 	printf("\n");
-	ft_printf("abc %k");
+	printf("abc %");
 	printf("\n");
-	printf("%s\n", NULL);
-	printf("\n");
+	//printf("%s\n", NULL);
+	//printf("\n");
 }
