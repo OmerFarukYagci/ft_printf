@@ -6,7 +6,7 @@
 /*   By: omyagci <omyagci@student.42kocaeli.com.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/17 15:53:04 by omyagci           #+#    #+#             */
-/*   Updated: 2026/02/19 17:47:22 by omyagci          ###   ########.fr       */
+/*   Updated: 2026/02/19 20:02:51 by omyagci          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ int	ft_formats(va_list args, const char format)
 	else if (format == 'X')
 		len += ft_print_hexu(va_arg(args, unsigned int));
 	else if (format == 'p')
-		len += ft_print_pointer(va_arg(args, unsigned long long));
+		len += ft_print_pointer((unsigned long long)va_arg(args, void *));
 	else
 		len += ft_print_others(format);
 	return (len);
