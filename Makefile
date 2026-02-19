@@ -3,7 +3,8 @@ CC 		= cc
 CFLAGS 	= -Wall -Wextra -Werror
 
 SRCS	= ft_printf.c ft_formats.c ft_putchar.c ft_print_char.c ft_print_string.c \
-		ft_print_number.c ft_print_unsigned.c
+		ft_print_number.c ft_print_unsigned.c ft_print_char.c ft_print_hexl.c \
+		ft_print_hexu.c ft_print_pointer.c 
 
 OBJS	= $(SRCS:.c=.o)
 
