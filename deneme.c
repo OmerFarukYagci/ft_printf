@@ -7,4 +7,6 @@ int main()
 	printf("\n");
 	ft_printf("abc %k");
 	printf("\n");
+	printf("%s\n", NULL);
+	printf("\n");
 }
