@@ -13,7 +13,7 @@ int main()
 	int c = printf("%s", NULL); // (null) ve return 6
 	printf("%d", c);
 	printf("\n");
-	int d = printf("%p", NULL); // 
+	int d = printf("%p", NULL); // (nil) ve return 5
 	printf("%d", d);
 
 	printf("\n");
@@ -28,6 +28,6 @@ int main()
 	c = ft_printf("%s", NULL); // (null) ve return 6
 	printf("%d", c);
 	printf("\n");
-	d = printf("%p", NULL); // 
+	d = printf("%p", NULL); // (nil) ve return 5
 	printf("%d", d);
 }
