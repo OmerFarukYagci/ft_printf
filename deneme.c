@@ -25,7 +25,7 @@ int main()
 	c = ft_printf("%s", NULL); // (null) ve return 6
 	printf("%d", c);
 
-	char *p;
+	char *p = "Hello";
 	printf("\n%p", p);
 	unsigned long long llong = &p;
 	printf("\n%llu", llong);
