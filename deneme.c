@@ -12,6 +12,9 @@ int main()
 	printf("\n");
 	int c = printf("%s", NULL); // (null) ve return 6
 	printf("%d", c);
+	printf("\n");
+	int d = printf("%p", NULL); // 
+	printf("%d", d);
 
 	printf("\n");
 
@@ -24,9 +27,7 @@ int main()
 	printf("\n");
 	c = ft_printf("%s", NULL); // (null) ve return 6
 	printf("%d", c);
-
-	//char *p = "Hello";
-	//printf("\n%p", p);
-	//unsigned long long llong = &p;
-	//printf("\n%llu", llong);
+	printf("\n");
+	d = printf("%p", NULL); // 
+	printf("%d", d);
 }
